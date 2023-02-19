@@ -89,7 +89,7 @@ export default function Conversation(props: Props) {
           {channel && (
             <Channel channel={channel} Avatar={CustomAvatar}>
               <Window>
-                <MessageList messages={props.messages} />
+                <MessageList messages={props.messages} messageActions={[]} />
               </Window>
             </Channel>
           )}
