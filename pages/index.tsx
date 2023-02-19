@@ -18,7 +18,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Image src="/icon.png" alt="13" width={200} height={200} priority />
+        <Image
+          src="/icon.png"
+          alt="Sophists"
+          width={200}
+          height={200}
+          priority
+        />
         <h1 className={inter.className} style={{ marginTop: 20 }}>
           Sophists
         </h1>
