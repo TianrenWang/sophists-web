@@ -13,6 +13,7 @@ import {
 } from "stream-chat-react";
 import "stream-chat-react/dist/css/v2/index.css";
 import { useMemo } from "react";
+import Heap from "../../components/Heap";
 
 interface Props {
   messages: MessageResponse[];
@@ -71,6 +72,7 @@ export default function Conversation(props: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content={props.conversation.thumbnailUrl} />
         <link rel="icon" href="/favicon.ico" />
+        <Heap />
       </Head>
       <div className={styles.header}>
         <Link href="/" className={styles.homeButton}>
