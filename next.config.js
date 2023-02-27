@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     formats: ["image/avif", "image/webp"],
-    domains: ["hips.hearstapps.com"],
+    domains: ["hips.hearstapps.com", "firebasestorage.googleapis.com"],
   },
 };
 
