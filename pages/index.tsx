@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Heap from "../components/Heap";
+import { SocialIcon } from "react-social-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +53,12 @@ export default function Home() {
             </a>
           </u>
         </p>
+        <SocialIcon
+          url="https://twitter.com/such_a_sophist"
+          bgColor="black"
+          fgColor="white"
+          style={{ marginTop: 20, height: 32, width: 32 }}
+        />
       </main>
     </>
   );
