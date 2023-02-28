@@ -4,10 +4,18 @@ import styles from "../../styles/Thumbnail.module.css";
 
 interface Props {
   messages: MessageResponse[];
+  conversation: { thumbnailMessageId: string };
 }
 
 export default function Thumbnail(props: Props) {
-  const previewMessages = props.messages.slice(0, 5);
+  const thumbnailMessageId = props.conversation.thumbnailMessageId;
+  const thumbnailIndex = props.messages.findIndex(
+    (message) => message.id === thumbnailMessageId
+  );
+  const previewMessages = props.messages.slice(
+    thumbnailIndex,
+    thumbnailIndex + 5
+  );
   return (
     <main className={styles.main}>
       {previewMessages.map((message, index) => {
