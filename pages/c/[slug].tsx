@@ -65,12 +65,10 @@ export default function Conversation(props: Props) {
     <>
       <Head>
         <title>{props.conversation.name}</title>
-        <meta
-          name="description"
-          content="Share your text conversations like never before!"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content={props.conversation.thumbnailUrl} />
+        <meta name="twitter:title" content={props.conversation.name} />
+        <meta name="twitter:image" content={props.conversation.thumbnailUrl} />
         <link rel="icon" href="/favicon.ico" />
         <Heap />
       </Head>
