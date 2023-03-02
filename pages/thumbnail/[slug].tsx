@@ -33,7 +33,7 @@ export default function Thumbnail(props: Props) {
           <div style={{ width: 32, height: 32 }} />
         );
         return (
-          <div className={styles.message}>
+          <div className={styles.message} key={message.id}>
             {Avatar}
             <p className={styles.text}>{message.text}</p>
           </div>
