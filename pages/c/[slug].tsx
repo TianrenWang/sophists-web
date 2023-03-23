@@ -67,7 +67,7 @@ export default function Conversation(props: Props) {
         <title>{props.conversation.name}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="og:image" content={props.conversation.thumbnailUrl} />
+        <meta property="og:image" content={props.conversation.thumbnailUrl} />
         <meta name="twitter:title" content={props.conversation.name} />
         <meta name="twitter:image" content={props.conversation.thumbnailUrl} />
         <link rel="icon" href="/favicon.ico" />
